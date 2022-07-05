@@ -1,0 +1,57 @@
+
+
+<html>
+<html>
+<h1>Figura Monstro Mini Craft CREEPER</h1>
+<canvas width="600" height="400"></canvas>
+
+<script>
+	var tela= document.querySelector("canvas");
+	var pincel= tela.getContext("2d");
+
+	//cabeca
+	pincel.fillStyle= "darkgreen";
+	pincel.fillRect(0,0,350,300);
+
+    //olhoEsquerdo
+	pincel.fillStyle= "black";
+	pincel.fillRect(50,50,90,90);
+
+	//OlhooDireito
+    pincel.fillStyle= "black";
+	pincel.fillRect(210,50,90,90);
+
+	//Nariz
+	pincel.fillStyle= "black";
+	pincel.fillRect(140,140,70,100);
+
+	//bocaParte1
+	pincel.fillStyle= "black";
+	pincel.fillRect(100,190,40,110);
+
+	//bocaParte2
+    pincel.fillStyle= "black";
+	pincel.fillRect(210,190,40,110);
+
+
+	/*pincel.fillStyle= "green";
+	pincel.fillRect(0,0,200,400);
+
+	pincel.fillStyle="red";
+	pincel.fillRect(400,0,200,400);
+
+    pincel.fillStyle="yellow";
+    pincel.beginPath();//Inicia Caminho para desenhar linha
+    pincel.moveTo(300, 200);//mover pincel ate cordenada passada
+    pincel.lineTo(200,400);//cria linha ate tal ponto
+    pincel.lineTo(400,400);
+    pincel.fill();
+
+    pincel.fillStyle="blue";
+    pincel.beginPath();
+    pincel.arc(300, 200, 50, 0,2*3.14);
+    pincel.fill();
+    */
+
+</script>
+</html>

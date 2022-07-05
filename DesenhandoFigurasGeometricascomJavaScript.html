@@ -1,0 +1,34 @@
+<html>
+<html>
+<h1>Figura Geometrica</h1>
+<canvas width="600" height="400"></canvas>
+
+<script>
+	var tela= document.querySelector("canvas");
+	var pincel= tela.getContext("2d");
+	pincel.fillStyle= "lightgrey";
+	pincel.fillRect(0,0,600,400);
+
+	pincel.fillStyle= "green";
+	pincel.fillRect(0,0,200,400);
+
+	pincel.fillStyle="red";
+	pincel.fillRect(400,0,200,400);
+
+
+    //desenho triangulo
+    pincel.fillStyle="yellow";
+    pincel.beginPath();//Inicia Caminho para desenhar linha
+    pincel.moveTo(300, 200);//mover pincel ate cordenada passada
+    pincel.lineTo(200,400);//cria linha ate tal ponto
+    pincel.lineTo(400,400);
+    pincel.fill();//fazer preenchimento do triangulo
+
+    //desenho circulo
+    pincel.fillStyle="blue";
+    pincel.beginPath();
+    pincel.arc(300, 200, 50, 0,2*3.14);
+    pincel.fill();
+
+</script>
+</html>

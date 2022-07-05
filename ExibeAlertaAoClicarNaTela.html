@@ -1,0 +1,47 @@
+<html>
+<html>
+<h1>Bandeira Do Brasil</h1>
+<canvas width="1000" height="500"></canvas>
+
+<script>
+    //dados tela a ser pintada
+	var tela= document.querySelector("canvas");
+	var pincel= tela.getContext("2d");
+	pincel.fillStyle= "green";
+	pincel.fillRect(0,0,1000,500);
+
+
+     var foiClicado = 1;
+
+    function criaBandeira(){     
+   
+    //desenho trianguloCima
+    pincel.fillStyle="yellow";
+    pincel.beginPath();//Inicia Caminho para desenhar linha
+    pincel.moveTo(500, 50);//mover pincel ate cordenada passada
+    pincel.lineTo(50,250);//cria linha ate tal ponto
+    pincel.lineTo(950,250);
+    pincel.fill();//fazer preenchimento do triangulo
+
+    //desenho trianguloBaixo
+    pincel.fillStyle="yellow";
+    pincel.beginPath();//Inicia Caminho para desenhar linha
+    pincel.moveTo(500, 450);//mover pincel ate cordenada passada
+    pincel.lineTo(50,250);//cria linha ate tal ponto
+    pincel.lineTo(950,250);
+    pincel.fill();//fazer preenchimento do triangulo
+
+    //desenho circulo
+    pincel.fillStyle="darkblue";
+    pincel.beginPath();
+    pincel.arc(500, 250, 130, 0,2*3.14);
+    pincel.fill();
+
+    }
+
+    tela.onclick= criaBandeira;
+   
+
+
+</script>
+</html>

@@ -1,0 +1,30 @@
+<html>
+<canvas width="600" height="400"></canvas>
+
+<script>
+	var tela= document.querySelector("canvas");
+	var pincel= tela.getContext('2d');
+	pincel.fillStyle= "lightgrey";
+	pincel.fillRect(0,0,600,400);
+
+
+
+	pincel.fillStyle="black";
+	pincel.beginPath();//iniciar um path
+	pincel.moveTo(50,50);//mover pincel ate cordenada indicada nos colchetes
+	pincel.lineTo(50, 400);//desenha linha do ponto 50 ao 400
+	pincel.lineTo(400, 400);//desenha linha do ponto 400 eixo x ao ponto 400 do eixo y
+	pincel.fill();//preencher figura
+
+	pincel.fillStyle="white";
+	pincel.beginPath();
+	pincel.moveTo(100, 175);
+	pincel.lineTo(100, 350);
+	pincel.lineTo(275, 350);
+	pincel.fill();
+
+
+
+</script>
+
+</html>
